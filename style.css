@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "vazir";
+    src: url("fonts/Vazir.woff2");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    
+}
+.counter_value{
+  font-family: "vazir",sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+.container {
+    background:bisque;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+       align-items: center;
+    direction: rtl;
+    padding: 16px;
+     font-family: "vazir",sans-serif;
+     font-weight: 700;
+}
+.btn12 {
+   font-family: "vazir",sans-serif;
+   padding: 20px;
+   margin: 30px;
+   border-radius: 20px;
+   background-image: radial-gradient(black,rgb(43, 0, 255));
+color: white;
+cursor: pointer;
+box-shadow: 25px 25px 30px 15px rgb(11, 77, 55);
+
+  }
+ .btn12:hover{
+  color: rgb(255, 42, 0);
+    transform: translateY(-5px);
+  transition: 0.4s ease;
+ }
+ 
+.btns {
+    margin-bottom: 10px;
+    display: flex;
+    background:linear-gradient(rgb(11, 77, 55),rgb(109, 176, 51));
+      width: min(400px, 100%);  /* تا 400، ولی در موبایل کوچکتر */
+  height: clamp(80px, 18vw, 100px); /* ارتفاع منعطف */
+    justify-content: center;
+    align-items: center;
+border-radius: 35px;
+}
+
+.d3 {
+    background: gray;
+    position:absolute;
+    top: clamp(120px, 75vh, 230px); /* جایگذاری عمودی متناسب با صفحه */
+  width: min(80vw, 500px);         /* به جای 500 ثابت */
+  height: min(85vw, 500px);        /* هم‌اندازه با عرض برای فرم دایره/مربع */
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+
+}
+
+
+@media (max-width: 480px) {
+  .d3, .d4{
+    border-radius: 32px; /* برای ظاهر بهتر روی موبایل */
+  }
